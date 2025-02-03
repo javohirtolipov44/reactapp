@@ -18,10 +18,16 @@ class MoviesAddForm extends Component {
   };
 
   render() {
+    const { name, season, serie } = this.state;
+    const { addForm } = this.props;
+
     return (
       <div className="movies-add-form">
         <h3>Yangi anime qo'shish</h3>
-        <form className="add-form d-flex">
+        <form
+          className="add-form d-flex"
+          onSubmit={(e) => addForm(e, { name, season, serie })}
+        >
           <input
             name="name"
             type="text"

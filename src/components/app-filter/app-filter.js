@@ -7,7 +7,7 @@ function AppFilter() {
         Barcha animelar
       </button>
       <button className="btn btn-outline-dark" type="button">
-        Mashhur animelar
+        Mashxur animelar
       </button>
       <button className="btn btn-outline-dark" type="button">
         Ko'p ko'rilgan animelar

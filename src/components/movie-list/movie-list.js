@@ -1,7 +1,7 @@
 import "./movie-list.css";
 import MovieListItem from "../movie-list-item/movie-list-item";
 
-function MovieList({ data }) {
+function MovieList({ data, onDelete }) {
   return (
     <div className="movie-list">
       {data.map((item) => (
@@ -10,6 +10,7 @@ function MovieList({ data }) {
           season={item.season}
           serie={item.serie}
           key={item.id}
+          onDelete={() => onDelete(item.id)}
         />
       ))}
     </div>
