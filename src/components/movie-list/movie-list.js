@@ -5,7 +5,12 @@ function MovieList({ data }) {
   return (
     <div className="movie-list">
       {data.map((item) => (
-        <MovieListItem name={item.name} viewers={item.viewers} key={item.id} />
+        <MovieListItem
+          name={item.name}
+          season={item.season}
+          serie={item.serie}
+          key={item.id}
+        />
       ))}
     </div>
   );

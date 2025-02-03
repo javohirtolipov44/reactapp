@@ -7,9 +7,15 @@ import "./App.css";
 
 function App() {
   const data = [
-    { name: "Solo Leveling", viewers: 812, id: 1, favourite: false },
-    { name: "Dr Stoun", viewers: 999, id: 2, favourite: true },
-    { name: "Hunter x Hunter", viewers: 900, id: 3, favourite: false },
+    { name: "Solo Leveling", season: "s1", serie: 5, id: 1, favourite: false },
+    { name: "Dr Stoun", season: "s1", serie: 4, id: 2, favourite: true },
+    {
+      name: "Hunter x Hunter",
+      season: "s1",
+      serie: 32,
+      id: 3,
+      favourite: false,
+    },
   ];
 
   return (
